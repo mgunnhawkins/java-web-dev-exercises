@@ -1,4 +1,4 @@
-package exercises;
+package exercises.dataTypes;
 import java.util.Scanner;
 public class NumericTypes {
     public static void main(String[] args){
