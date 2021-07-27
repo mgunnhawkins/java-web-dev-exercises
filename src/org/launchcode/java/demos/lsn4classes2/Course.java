@@ -1,5 +1,7 @@
 package org.launchcode.java.demos.lsn4classes2;
 
+import exercises.classesAndObjects.school.Student;
+
 import java.util.ArrayList;
 
 public class Course {
