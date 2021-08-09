@@ -9,13 +9,15 @@ public class Course {
     private String courseName;
     private String courseDescription;
     private String teacher;
-    private ArrayList<Student> studentRoster;
+    private ArrayList<Student> studentRoster = new ArrayList<Student>();
     //roster with one piece of info can be an array list.  If wanting more than one piece of info then it can be a
     // hashmap.
 
     //if Array list holds class Student then all info for student will come with it(name, id, gpa,etc...)
-
-    protected Course (String courseName, String courseDescription, String teacher){
+    //don't worry about populating now.
+    public Course(String courseName,
+                  String courseDescription,
+                  String teacher){
         this.courseName = courseName;
         this.courseDescription = courseDescription;
         this.teacher = teacher;

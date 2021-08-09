@@ -1,5 +1,8 @@
 package org.launchcode.java.demos.lsn4classes2;
 
+import org.launchcode.java.demos.lsn4classes2.Student;
+import org.launchcode.java.demos.lsn4classes2.Teacher;
+
 public class Teacher {
     private String firstName;
     private String lastName;
