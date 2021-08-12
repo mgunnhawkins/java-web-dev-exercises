@@ -10,7 +10,7 @@ public class Cat {
     private String family = "Felidae";
 
     public Cat (double aWeight) {
-        weight = aWeight;
+        weight = 13;
     }
 
     /**** Getters and Setters ****/
