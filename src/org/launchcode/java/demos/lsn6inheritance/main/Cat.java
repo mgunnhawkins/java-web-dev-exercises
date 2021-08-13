@@ -1,4 +1,4 @@
-package org.launchcode.java.demos.lsn6inheritance;
+package org.launchcode.java.demos.lsn6inheritance.main;
 
 public class Cat {
 
@@ -10,7 +10,7 @@ public class Cat {
     private String family = "Felidae";
 
     public Cat (double aWeight) {
-        weight = 13;
+        weight = 7;
     }
 
     /**** Getters and Setters ****/
