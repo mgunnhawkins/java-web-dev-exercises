@@ -1,6 +1,6 @@
 package org.launchcode.java.demos.lsn6inheritance.main;
 
-public class Cat {
+public abstract class Cat implements Feedable{
 
     private boolean tired = false;
     private boolean hungry = false;
@@ -8,9 +8,12 @@ public class Cat {
 
     // The biological family for all cat species
     private String family = "Felidae";
-
     public Cat (double aWeight) {
-        weight = 7;
+        weight = aWeight;
+    }
+
+    public Cat () {  //additional constructor
+        weight = 13;
     }
 
     /**** Getters and Setters ****/
@@ -41,7 +44,7 @@ public class Cat {
 
     public String getFamily() {
         return family;
-    }
+    }//allows family to be read by getter.  no setter because family of a cat should not change
 
     /**** Instance Methods ****/
 
@@ -52,6 +55,7 @@ public class Cat {
     }
 
     // Eating makes a cat not hungry
+    @Override
     public void eat() {
 
         // eating when not hungry makes a cat sleepy
@@ -62,7 +66,8 @@ public class Cat {
         hungry = false;
     }
 
-    public String noise () {
-        return "Meeeeeeooooowww!";
-    }
+    public abstract String noise (); //forces subclasses to provide their own version of noise();
+
+
+
 }
